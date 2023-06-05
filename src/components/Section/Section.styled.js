@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Division = styled.div`
+  width: 400px;
   text-align: center;
 `;
 
