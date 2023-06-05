@@ -13,7 +13,10 @@ export class App extends Component {
   onClick = (event) => {
     const vote = event.currentTarget.textContent;
     console.log(vote);
-    
+
+    this.setState(prevState => ({
+    vote: prevState.vote + 1, 
+    }));
   }
 
 
