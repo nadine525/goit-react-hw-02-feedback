@@ -1,11 +1,16 @@
 import React from 'react';
-import { Division } from './Section.styled';
+import PropTypes from 'prop-types';
+import { Division, Title } from './Section.styled';
 
-const Section = ({ title }) => {
+const Section = ({ title }) => (
   <Division>
-    <h2>{title}</h2>
+    <Title>{title}</Title>
     {/* {children} */}
-  </Division>;
-};
+  </Division>
+);
 
 export default Section;
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+};
