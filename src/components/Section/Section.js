@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Division, Title } from './Section.styled';
 
-const Section = ({ title }) => (
+const Section = ({ title, children }) => (
   <Division>
     <Title>{title}</Title>
-    {/* {children} */}
+    {children}
   </Division>
 );
 
